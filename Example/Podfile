@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LYSpecificViews_Example' do
+  pod 'LYSpecificViews', :path => '../'
+
+  target 'LYSpecificViews_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
