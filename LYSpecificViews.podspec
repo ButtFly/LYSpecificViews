@@ -24,11 +24,12 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/ButtFly/LYSpecificViews'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '余河川' => '315585758@qq.com' }
+  s.author           = { 'ButtFly' => '315585758@qq.com' }
   s.source           = { :git => 'https://github.com/ButtFly/LYSpecificViews.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.swift_versions = '5.0'
 
   s.source_files = 'LYSpecificViews/Classes/**/*'
   

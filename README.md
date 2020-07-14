@@ -22,7 +22,7 @@ pod 'LYSpecificViews'
 
 ## Author
 
-余河川, 315585758@qq.com
+ButtFly, 315585758@qq.com
 
 ## License
 
