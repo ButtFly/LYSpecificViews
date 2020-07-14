@@ -1,0 +1,23 @@
+PODS:
+  - LYSpecificViews (0.1.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - LYSpecificViews (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  LYSpecificViews:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYSpecificViews: 42ca39fa239273ceb742778bc43b87cce0c06543
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 9ed5ffd2ec6c42508d2e753acb137b398edfc598
+
+COCOAPODS: 1.9.3

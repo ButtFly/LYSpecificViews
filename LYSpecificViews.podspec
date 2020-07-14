@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LYSpecificViews'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LYSpecificViews.'
+  s.summary          = '一些系统Layer的View'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+封装简单的Layer的视图，让他们可以支持自动布局，去除隐式动画的干扰，能表现与其他View一致的去实现动画
                        DESC
 
-  s.homepage         = 'https://github.com/余河川/LYSpecificViews'
+  s.homepage         = 'https://github.com/ButtFly/LYSpecificViews'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '余河川' => '315585758@qq.com' }
-  s.source           = { :git => 'https://github.com/余河川/LYSpecificViews.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ButtFly/LYSpecificViews.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

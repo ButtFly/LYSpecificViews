@@ -1,0 +1,6 @@
+framework module LYSpecificViews {
+  umbrella header "LYSpecificViews-umbrella.h"
+
+  export *
+  module * { export * }
+}

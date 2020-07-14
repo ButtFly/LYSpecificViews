@@ -31,7 +31,7 @@
 		127FD48B4454EE83B1859940 /* Pods_LYSpecificViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYSpecificViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AA5D1A867A33F182019879 /* Pods-LYSpecificViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSpecificViews_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LYSpecificViews_Tests/Pods-LYSpecificViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		36572950A07B5C26E71CD6FE /* Pods-LYSpecificViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSpecificViews_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYSpecificViews_Example/Pods-LYSpecificViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5B5CC606FCA69211C3608C9D /* LYSpecificViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LYSpecificViews.podspec; path = ../LYSpecificViews.podspec; sourceTree = "<group>"; };
+		5B5CC606FCA69211C3608C9D /* LYSpecificViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYSpecificViews.podspec; path = ../LYSpecificViews.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* LYSpecificViews_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSpecificViews_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* LYSpecificViews_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYSpecificViews_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		72B0767BE0F598C2C2462079 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		72B0767BE0F598C2C2462079 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A137734E8604CD97D21D0B93 /* Pods_LYSpecificViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYSpecificViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA968A73560EF7C3F86BBAFA /* Pods-LYSpecificViews_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSpecificViews_Tests.release.xcconfig"; path = "Target Support Files/Pods-LYSpecificViews_Tests/Pods-LYSpecificViews_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AAAD8D42777D8D48D9D9A118 /* Pods-LYSpecificViews_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYSpecificViews_Example.release.xcconfig"; path = "Target Support Files/Pods-LYSpecificViews_Example/Pods-LYSpecificViews_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EA4F74AA75EE5470615AB216 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EA4F74AA75EE5470615AB216 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				28AA5D1A867A33F182019879 /* Pods-LYSpecificViews_Tests.debug.xcconfig */,
 				AA968A73560EF7C3F86BBAFA /* Pods-LYSpecificViews_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LYSpecificViews_Example/Pods-LYSpecificViews_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LYSpecificViews/LYSpecificViews.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYSpecificViews.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
